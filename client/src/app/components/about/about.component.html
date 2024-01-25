@@ -1,0 +1,13 @@
+<!-- Bind a click event to call the loadUserInfo function when the button is clicked -->
+<button class="btn btn-light" (click)="loadUserInfo()">Load info about me</button>
+
+<!-- Display the user's name -->
+<h3>Logged in user: {{ name }}</h3>
+
+<!-- Bind the src attribute to display the user's profile picture -->
+<img [src]="profile_pic" alt="User Profile Picture">
+
+<p>
+  <!-- Bind the href attribute to link to the user's profile on Spotify -->
+  <a class="btn btn-light" [href]="profile_link" target="_blank">Open profile on Spotify</a>
+</p>
